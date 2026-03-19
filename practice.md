@@ -118,7 +118,84 @@
 
 ### Шаг 3: Настройка DHCP-сервера на R1
 
+<img width="630" height="89" alt="image" src="https://github.com/user-attachments/assets/cedc561e-43a4-424a-a9ab-f755f8ec0fad" />
+
+<img width="542" height="64" alt="image" src="https://github.com/user-attachments/assets/cd614520-97d8-48bc-b5a1-9ffedd7a306b" />
+
+<img width="539" height="66" alt="image" src="https://github.com/user-attachments/assets/642a37d4-c9dc-49d2-bfae-2f1ee7978d02" />
+
+<img width="545" height="67" alt="image" src="https://github.com/user-attachments/assets/687317c3-f906-4dc9-adab-489766c1fbac" />
+
+<img width="542" height="66" alt="image" src="https://github.com/user-attachments/assets/7dffda00-a054-49e6-a374-d67b0496e59c" />
 
 
 ### Шаг 4: Проверка пинга
 
+<img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/41eae2df-9684-46dc-96d2-8bd0c139b7cf" />
+
+## Часть 3
+### Шаг 1-2: Имя и маршрутизация
+
+<img width="296" height="29" alt="image" src="https://github.com/user-attachments/assets/8eaab1f4-495c-4a16-88c7-df9eaf292ab4" />
+
+### Шаг 3: VLAN 100 и 200
+
+<img width="288" height="72" alt="image" src="https://github.com/user-attachments/assets/268b4a1a-ff29-435b-a4bb-30e14370f59b" />
+
+### Шаг 4: Назначение портов
+
+<img width="351" height="101" alt="image" src="https://github.com/user-attachments/assets/83405d39-4dd2-417a-90aa-bec096cf45e1" />
+
+### Шаг 5: Switch Virtual Interface
+
+<img width="386" height="43" alt="image" src="https://github.com/user-attachments/assets/4e107f73-74c0-4bbc-8142-b1c3c3a61fca" />
+
+<img width="411" height="41" alt="image" src="https://github.com/user-attachments/assets/f37f64aa-9d5c-4657-8337-e7ad5cc07297" />
+
+### Шаг 6: Интерфейсы 3-го уровня
+
+<img width="418" height="196" alt="image" src="https://github.com/user-attachments/assets/1050d7d1-bfc8-4e67-97ec-83e47dea40dd" />
+
+### Шаг 7: Проверка
+
+<img width="399" height="187" alt="image" src="https://github.com/user-attachments/assets/692259be-34ff-4a70-b38c-da1c65371ce5" />
+
+## Часть 4
+
+### Шаг 1-2: Настройка IP на R2 и R3
+
+<img width="366" height="101" alt="image" src="https://github.com/user-attachments/assets/abcf98b2-2c9c-4477-853e-06ebad8651bc" />
+
+<img width="365" height="99" alt="image" src="https://github.com/user-attachments/assets/e0fb2f86-376f-46b0-8bc9-5f1e5b7a4743" />
+
+### Шаг 3: HSRP (f0/0)
+
+<img width="315" height="86" alt="image" src="https://github.com/user-attachments/assets/7263f53e-86b5-4a7a-b9bd-1ad6b907e173" />
+
+<img width="316" height="54" alt="image" src="https://github.com/user-attachments/assets/e7da5232-efb4-47c5-9fa4-3af0e34a3412" />
+
+## Часть 5
+
+### Шаг 1: Настройка EIGRP AS 100
+
+<img width="406" height="169" alt="image" src="https://github.com/user-attachments/assets/dbc8d31d-5b52-4c96-a80d-d3c312f09329" />
+
+<img width="407" height="170" alt="image" src="https://github.com/user-attachments/assets/9a843c5c-5629-45f8-a985-da2ddea1f22b" />
+
+<img width="408" height="169" alt="image" src="https://github.com/user-attachments/assets/54b6a561-e66d-46a0-a369-a0ca3c437a9c" />
+
+<img width="411" height="169" alt="image" src="https://github.com/user-attachments/assets/fa13d56b-c70f-49c5-89ab-1db37af2225b" />
+
+### Шаг 2: Проверка SSH
+
+
+
+### Шаг 3: Пинг с сервера
+
+
+
+## Часть 6
+
+## Часть 7
+
+## Часть 8
