@@ -186,21 +186,85 @@
 
 <img width="633" height="170" alt="image" src="https://github.com/user-attachments/assets/bdd28c51-307a-4b35-a3f5-8c24c5c31613" />
 
-
-
-
-
-
 ### Шаг 2: Проверка SSH
 
 
 
 ### Шаг 3: Пинг с сервера
 
-
+<img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/e4073e6b-0e1c-4d49-bcb6-c372978d4446" />
 
 ## Часть 6
+### Шаг 1-2: Доступ к веб-серверу только с PC 2.0.0.100 (на R3)
+
+<img width="587" height="55" alt="image" src="https://github.com/user-attachments/assets/6e809bba-bdf4-4c3f-84cb-a9ca58d50038" />
+
+### Шаг 3: Запрет пинга на R2 и R3
+
+<img width="373" height="57" alt="image" src="https://github.com/user-attachments/assets/0f9c4b4a-112a-4a6b-b67f-2405035ba9e4" />
+
+<img width="376" height="58" alt="image" src="https://github.com/user-attachments/assets/6cd5723d-8577-4d55-8f33-873be660c958" />
 
 ## Часть 7
+### Шаг 1-2: Loopback (R1 и R3)
+
+<img width="553" height="112" alt="image" src="https://github.com/user-attachments/assets/27d82f99-eecf-4bc1-9c44-52c5e7fbb404" />
+
+<img width="552" height="99" alt="image" src="https://github.com/user-attachments/assets/0b7a5bcc-5d8a-4be0-b3ee-8efbf7512b45" />
+
+### Шаг 3-4: RIPv2 (только R1 и R3)
+
+<img width="336" height="72" alt="image" src="https://github.com/user-attachments/assets/09983d05-6182-4d05-a05a-aa43ed703a8c" />
+
+<img width="337" height="73" alt="image" src="https://github.com/user-attachments/assets/ee1367ff-da1c-414d-b916-57881a4a5830" />
+
+### Шаг 5-6: GRE туннель
+
+<img width="392" height="102" alt="image" src="https://github.com/user-attachments/assets/378161bc-4e0b-4f66-95c6-91658f14b90a" />
+
+<img width="394" height="102" alt="image" src="https://github.com/user-attachments/assets/7030164b-af27-43a9-b68c-b8cd7541ff89" />
+
+### Шаг 6: Проверка
+
+<img width="501" height="270" alt="image" src="https://github.com/user-attachments/assets/f7f2c2ce-9c53-4403-830e-c06b30f8f611" />
 
 ## Часть 8
+### Шаг 1: NTP и Syslog (на всех R1,R2,R3,MLS)
+
+<img width="376" height="57" alt="image" src="https://github.com/user-attachments/assets/d82972b5-d5c9-492f-b189-1b241e262503" />
+
+<img width="379" height="57" alt="image" src="https://github.com/user-attachments/assets/63e19ee2-2389-4b9b-bbc7-99096560227b" />
+
+<img width="377" height="61" alt="image" src="https://github.com/user-attachments/assets/25fecfc3-9151-4a0d-9da6-ee6ab71a012d" />
+
+<img width="384" height="57" alt="image" src="https://github.com/user-attachments/assets/92dd8e74-b0dd-4525-9d43-098a2c962e37" />
+
+### Шаг 2: SNMP (R2, R3)
+
+<img width="530" height="44" alt="image" src="https://github.com/user-attachments/assets/ead99389-ccbd-4e08-9e9c-fc5b6e0c87f6" />
+
+<img width="529" height="44" alt="image" src="https://github.com/user-attachments/assets/a24e075d-f089-47b6-a19a-1f9a91e51526" />
+
+### Шаг 3: AAA + Telnet (R3)
+
+<img width="506" height="70" alt="image" src="https://github.com/user-attachments/assets/d30d4697-f813-40e4-bbe8-54623164cd95" />
+
+### Шаг 4-5: FTP (R2)
+
+<img width="388" height="198" alt="image" src="https://github.com/user-attachments/assets/3cdc3c86-ac05-4312-a1a3-6ed59da500ad" />
+
+### Шаг 6: TFTP (R3)
+
+<img width="386" height="112" alt="image" src="https://github.com/user-attachments/assets/1be7e457-0092-410f-8cc7-d5edc69a538e" />
+
+### Шаг 7: Убедиться, что нет команд boot system (R3)
+
+<img width="375" height="27" alt="image" src="https://github.com/user-attachments/assets/aaf15e9c-f24d-443a-bf5b-80ad04e14fa4" />
+
+### Шаг 8: Пинг или telnet по имени "standby" (R2)
+
+
+
+### Шаг 9: Изменение локального имени пользователя через восстановление пароля (R3)
+
+
