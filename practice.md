@@ -178,13 +178,18 @@
 
 ### Шаг 1: Настройка EIGRP AS 100
 
-<img width="406" height="169" alt="image" src="https://github.com/user-attachments/assets/dbc8d31d-5b52-4c96-a80d-d3c312f09329" />
+<img width="392" height="97" alt="image" src="https://github.com/user-attachments/assets/fb4e57c3-fff5-4983-b67f-e70b289e44de" />
 
-<img width="407" height="170" alt="image" src="https://github.com/user-attachments/assets/9a843c5c-5629-45f8-a985-da2ddea1f22b" />
+<img width="399" height="54" alt="image" src="https://github.com/user-attachments/assets/f0b39871-e807-4ff5-be25-19b6b87228b8" />
 
-<img width="408" height="169" alt="image" src="https://github.com/user-attachments/assets/54b6a561-e66d-46a0-a369-a0ca3c437a9c" />
+<img width="629" height="84" alt="image" src="https://github.com/user-attachments/assets/69b25f0e-ee26-4e41-b051-3d59379499d0" />
 
-<img width="411" height="169" alt="image" src="https://github.com/user-attachments/assets/fa13d56b-c70f-49c5-89ab-1db37af2225b" />
+<img width="633" height="170" alt="image" src="https://github.com/user-attachments/assets/bdd28c51-307a-4b35-a3f5-8c24c5c31613" />
+
+
+
+
+
 
 ### Шаг 2: Проверка SSH
 
