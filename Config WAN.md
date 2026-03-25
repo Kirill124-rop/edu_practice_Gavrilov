@@ -81,102 +81,92 @@
 <img width="253" height="16" alt="image" src="https://github.com/user-attachments/assets/3e1a6302-8bea-4a5e-9b4a-47c8f3845bc8" />
 
 *Рис. 16. R3 ID*
-### Шаг 5:
+### Шаг 5-9: Назначение зон
 
 <img width="364" height="15" alt="image" src="https://github.com/user-attachments/assets/9fb9ef1c-f407-472b-8cff-b422701549c2" />
 
-*Рис. 17. Схема топологии*
-### Шаг 6:
 
 <img width="376" height="17" alt="image" src="https://github.com/user-attachments/assets/92a056dd-30ca-43cf-b8f9-e065a6a0e04c" />
 
-*Рис. 18. Схема топологии*
-### Шаг 7:
+*Рис. 18. R1 area 0, 1*
+
 
 <img width="386" height="15" alt="image" src="https://github.com/user-attachments/assets/57dfa0eb-bce8-4c2f-8865-de5db6b10bf6" />
 
-*Рис. 19. Схема топологии*
-### Шаг 8:
 
 <img width="378" height="14" alt="image" src="https://github.com/user-attachments/assets/f0c4832f-ef20-4a4f-81d7-0297488f4968" />
 
-*Рис. 20. Схема топологии*
-### Шаг 9:
+*Рис. 20. R2 area 0, 23*
+
 
 <img width="386" height="16" alt="image" src="https://github.com/user-attachments/assets/f8e5186b-1f4d-4b83-b549-d13d0ec87def" />
 
-*Рис. 21. G0/0*
 
 <img width="391" height="13" alt="image" src="https://github.com/user-attachments/assets/f8064527-9bc9-4e10-94f6-72472c1a66ae" />
 
-*Рис. 22. Loopback 3*
 
 <img width="416" height="17" alt="image" src="https://github.com/user-attachments/assets/85be030d-b1f5-4cb0-bc64-939314fdd9f8" />
 
-*Рис. 23. Loopback 33*
-### Шаг 10:
+*Рис. 23. Loopback 33, 3, g0/0*
+### Шаг 10: Блокировка hello-пакетов на R1
 
 <img width="288" height="29" alt="image" src="https://github.com/user-attachments/assets/caf0bec0-f346-44fc-b02a-396d973f2273" />
 
-*Рис. 24. Схема топологии*
-### Шаг 11:
+*Рис. 24. R1 Ospf 100 на f0/0*
+### Шаг 11: R2 всегда DR
 
 <img width="245" height="59" alt="image" src="https://github.com/user-attachments/assets/3824326d-205a-4a51-b472-74919877b9b8" />
 
-*Рис. 25. Схема топологии*
-### Шаг 12:
+*Рис. 25. Приоритеты на R2*
+### Шаг 12: Шлюз по умолчанию
 
 <img width="335" height="43" alt="image" src="https://github.com/user-attachments/assets/14f452f2-1e9e-4782-81c3-f6830a01d530" />
 
-*Рис. 26. Схема топологии*
+*Рис. 26. default на R3*
 ## Часть 4
-### Шаг 1-4:
+### Шаг 1-6: BGP между R3 и R1973
 
 <img width="376" height="31" alt="image" src="https://github.com/user-attachments/assets/e9393397-6730-44a1-9e75-8a5a28d9dc18" />
 
-*Рис. 27. Схема топологии*
+*Рис. 27. Bgp на R3*
 
 <img width="435" height="44" alt="image" src="https://github.com/user-attachments/assets/6c0ef3b5-a2e9-42b2-bd93-d261c7343224" />
 
-*Рис. 28. Схема топологии*
-### Шаг 5:
 
 <img width="413" height="17" alt="image" src="https://github.com/user-attachments/assets/d0e5cd60-8a32-4faf-9e5e-d9fa92510360" />
 
-*Рис. 29. Схема топологии*
-### Шаг 6:
 
 <img width="351" height="14" alt="image" src="https://github.com/user-attachments/assets/47a7af81-ae6d-4c60-a807-b9dca57c4233" />
 
-*Рис. 30. Схема топологии*
+*Рис. 30. Bgp на R1973*
 ## Часть 5
-### Шаг 1:
+### Шаг 1: Проверка лицензий
 
 <img width="546" height="89" alt="image" src="https://github.com/user-attachments/assets/3ec74c3e-ca2d-4a46-bdc0-c6db5f1b9915" />
 
-*Рис. 31. Схема топологии*
-### Шаг 2:
+*Рис. 31. Проверка лицензий на R3*
+### Шаг 2. Установка лицензии UCK9
 
 <img width="428" height="14" alt="image" src="https://github.com/user-attachments/assets/fe2d6180-99d8-41ac-a959-e0aadc6b3eef" />
 
-*Рис. 32. Схема топологии*
-### Шаг 3:
+*Рис. 32. Лицензия UCK9*
+### Шаг 3. Установка лицензии security9
 
 <img width="470" height="16" alt="image" src="https://github.com/user-attachments/assets/47daa3b4-478b-4114-9b07-6998ff5a0831" />
 
-*Рис. 33. Схема топологии*
-### Шаг 4:
+*Рис. 33. Лицензия securityk9*
+### Шаг 4. Сохранение конфигурации
 
 <img width="276" height="55" alt="image" src="https://github.com/user-attachments/assets/2c8d500e-bf61-4ef7-a50e-2a536e987915" />
 
-*Рис. 34. Схема топологии*
+*Рис. 34. Сохранение лицензии*
 ## Часть 6
-### Шаг 1:
+### Шаг 1: Настройка R1 как DHCP-ретранслятора
 
 <img width="287" height="29" alt="image" src="https://github.com/user-attachments/assets/337f7783-d77e-471a-aa07-640ac08d4c7f" />
 
 *Рис. 35. Добовляем hellper*
-### Шаг 2:
+### Шаг 2: Проверка получения IP на PC0
 
 <img width="396" height="188" alt="image" src="https://github.com/user-attachments/assets/6bf1a053-776d-4994-a9cd-44376bcb408d" />
 
@@ -235,7 +225,7 @@
 <img width="289" height="46" alt="image" src="https://github.com/user-attachments/assets/ef62fa8c-c7a8-4c56-a0b7-e6d28f38ef1f" />
 
 *Рис. 48. R1*
-### Шаг 9:
+### Шаг 9: Шлюз по умолчанию для OSPFv3
 
 <img width="329" height="43" alt="image" src="https://github.com/user-attachments/assets/441cfc4d-c3be-4561-ba24-301ffe2dff1a" />
 
