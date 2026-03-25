@@ -257,13 +257,518 @@
 *Рис. 52. R1973*
 
 
+### Конфигурация устройств
 
+<details><summary>R1</summary>
 
+```
 
+R1#sh run
+Building configuration...
 
+Current configuration : 1136 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017SKYF-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.1.1.1 255.255.255.0
+ ip helper-address 10.23.23.100
+ duplex auto
+ speed auto
+ ipv6 address FE80::1 link-local
+ ipv6 address 2001:10:10:10::/64 eui-64
+ ipv6 enable
+ ipv6 ospf 100 area 1
+!
+interface FastEthernet0/1
+ ip address 10.12.12.1 255.255.255.0
+ duplex auto
+ speed auto
+ ipv6 address 2001:11:11:11::1/64
+ ipv6 ospf 100 area 0
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ router-id 1.1.1.1
+ log-adjacency-changes
+ passive-interface FastEthernet0/0
+ network 10.1.1.0 0.0.0.255 area 1
+ network 10.12.12.0 0.0.0.255 area 0
+!
+ipv6 router ospf 100
+ router-id 0.0.0.1
+ log-adjacency-changes
+ passive-interface default
+ no passive-interface FastEthernet0/1
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+```
+</details>
 
+<details><summary>R2</summary>
 
+```
+R2#sh run
+Building configuration...
 
+Current configuration : 1147 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R2
+!
+!
+!
+!
+ip dhcp excluded-address 10.1.1.1 10.1.1.10
+!
+ip dhcp pool LAN_POOL
+ network 10.1.1.0 255.255.255.0
+ default-router 10.1.1.1
+ dns-server 8.8.8.8
+!
+!
+!
+ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017O0YH-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.23.23.100 255.255.255.0
+ ip ospf priority 255
+ duplex auto
+ speed auto
+ ipv6 address 2001:12:12:12::2/64
+ ipv6 ospf 100 area 23
+!
+interface FastEthernet0/1
+ ip address 10.12.12.2 255.255.255.0
+ ip ospf priority 255
+ duplex auto
+ speed auto
+ ipv6 address 2001:11:11:11::2/64
+ ipv6 ospf 100 area 0
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ router-id 0.0.0.2
+ log-adjacency-changes
+ network 10.12.12.0 0.0.0.255 area 0
+ network 10.23.23.0 0.0.0.255 area 23
+!
+ipv6 router ospf 100
+ router-id 0.0.0.2
+ log-adjacency-changes
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+```
+</details>
 
+<details><summary>R3</summary>
 
+```
+R3#sh run
+Building configuration...
 
+Current configuration : 1898 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R3
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+username R1973 password 0 StrongP@ssw0rd123
+!
+!
+license udi pid CISCO2911/K9 sn FTX15245X0B-
+license boot module c2900 technology-package securityk9
+license boot module c2900 technology-package uck9
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback3
+ ip address 3.3.3.3 255.0.0.0
+!
+interface Loopback33
+ no ip address
+!
+interface GigabitEthernet0/0
+ ip address 10.23.23.3 255.255.255.0
+ duplex auto
+ speed auto
+ ipv6 address 2001:12:12:12::3/64
+ ipv6 ospf 100 area 23
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ ip address 30.30.30.3 255.255.255.0
+ encapsulation ppp
+ ppp authentication chap
+ ppp chap hostname R3
+ ppp chap password StrongP@ssw0rd123
+ no keepalive
+ ipv6 address 2001:30:30:30::3/64
+ ipv6 eigrp 100
+ ipv6 ospf 100 area 23
+ clock rate 2000000
+!
+interface Serial0/0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ router-id 3.3.3.3
+ log-adjacency-changes
+ network 10.23.23.0 0.0.0.255 area 23
+ network 3.0.0.0 0.255.255.255 area 23
+ network 33.0.0.0 0.255.255.255 area 23
+ default-information originate
+!
+router bgp 3
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 30.30.30.73 remote-as 1973
+!
+ipv6 router ospf 100
+ router-id 0.0.0.3
+ default-information originate
+ log-adjacency-changes
+!
+ipv6 router eigrp 100
+ eigrp router-id 0.0.0.3
+ shutdown 
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 30.30.30.73 
+!
+ip flow-export version 9
+!
+ipv6 route ::/0 2001:30:30:30::1973
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+```
+</details>
+
+<details><summary>R1973</summary>
+
+```
+R1973#sh run
+Building configuration...
+
+Current configuration : 1431 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1973
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+
+R1973#
+R1973#sh run
+Building configuration...
+
+Current configuration : 1431 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R1973
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+username R3 password 0 StrongP@ssw0rd123
+!
+!
+license udi pid CISCO2911/K9 sn FTX1524K5T0-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ no ip address
+ ipv6 eigrp 100
+!
+interface Loopback3
+ no ip address
+ ipv6 address 2001:1973:1973:1973::1973/64
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ ip address 30.30.30.73 255.255.255.0
+ encapsulation ppp
+ ppp authentication chap
+ ppp chap hostname R1973
+ ppp chap password StrongP@ssw0rd123
+ ipv6 address 2001:30:30:30::1973/64
+!
+interface Serial0/0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router bgp 1973
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 30.30.30.3 remote-as 3
+ network 73.73.73.0 mask 255.255.255.0
+!
+ipv6 router eigrp 100
+ eigrp router-id 0.0.0.73
+ shutdown 
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 30.30.30.3 
+!
+ip flow-export version 9
+!
+ipv6 route ::/0 2001:30:30:30::3
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+```
+</details>
