@@ -175,12 +175,12 @@
 
 <img width="287" height="29" alt="image" src="https://github.com/user-attachments/assets/337f7783-d77e-471a-aa07-640ac08d4c7f" />
 
-*Рис. 35. Схема топологии*
+*Рис. 35. Добовляем hellper*
 ### Шаг 2:
 
 <img width="396" height="188" alt="image" src="https://github.com/user-attachments/assets/6bf1a053-776d-4994-a9cd-44376bcb408d" />
 
-*Рис. 36. Схема топологии*
+*Рис. 36. Ping с PC*
 ## Часть 7
 ### Шаг 1-2: Включение IPv6 маршрутизации на всех маршрутизаторах
 
