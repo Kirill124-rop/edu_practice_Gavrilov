@@ -35,45 +35,56 @@
 *Вывод в terminal dir_m*
 ### Шаг 7. user_light.sh
 
+<img width="394" height="62" alt="image" src="https://github.com/user-attachments/assets/aa4ec309-54b1-4a99-b091-aed1758c34df" />
 
 *Вывод в terminal user_light*
 ### Шаг 8. user_f.sh
 
+<img width="383" height="57" alt="image" src="https://github.com/user-attachments/assets/694bc23c-983b-477a-bf10-cfb482d5a78d" />
 
 *Вывод в terminal user_f*
 ### Шаг 9. user_f2.sh
 
+<img width="446" height="73" alt="image" src="https://github.com/user-attachments/assets/a15ac6c0-b618-4190-98ad-8b3b9a7bdf38" />
 
 *Вывод в terminal user_f2*
-### Шаг 10. finder_light.sh
+### Шаг 10. finder_liight.sh
 
+<img width="389" height="129" alt="image" src="https://github.com/user-attachments/assets/d40d74e3-65fb-4249-bf3c-5da142cdb300" />
 
-*Вывод в terminal finder_light*
+*Вывод в terminal finder_liight*
 ### Шаг 11. math.sh
 
+<img width="390" height="93" alt="image" src="https://github.com/user-attachments/assets/d6840e12-4068-484e-b7a1-80832a617b16" />
 
 *Вывод в terminal math*
 ### Шаг 12. sort.sh
 
+<img width="396" height="114" alt="image" src="https://github.com/user-attachments/assets/cb88c0aa-8367-49d7-b19d-5ca3e67cbd9e" />
 
 *Вывод в terminal sort*
 ### Шаг 13. io.sh
 
+<img width="392" height="195" alt="image" src="https://github.com/user-attachments/assets/00fce221-7c53-4bd7-b15a-8e1cdc7f9be8" />
 
 *Вывод в terminal io*
 ### Шаг 14. user_use.sh
 
+<img width="382" height="125" alt="image" src="https://github.com/user-attachments/assets/edb34f9a-ec52-45a5-8d35-eec47e90f033" />
 
 *Вывод в terminal user_use*
 ### Шаг 15. sort_du.sh
 
+<img width="421" height="89" alt="image" src="https://github.com/user-attachments/assets/b7fc1ee9-4b81-484e-b4e5-a16ad8f88bfd" />
 
 *Вывод в terminal sort_du*
 ### Шаг 16. dir_info.sh
 
+<img width="383" height="52" alt="image" src="https://github.com/user-attachments/assets/b8e34d1b-a088-431f-beda-2482282233b3" />
 
 *Вывод в terminal dir_info*
 ### Шаг 17. bash_history.sh
 
+<img width="397" height="125" alt="image" src="https://github.com/user-attachments/assets/3f4729ec-1f18-4ba3-b5d6-85f39c6b4777" />
 
 *Вывод в terminal bash_history*
